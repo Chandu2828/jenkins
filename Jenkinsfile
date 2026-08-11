@@ -1,4 +1,4 @@
-pipepilne {
+pipeline {
     agent any 
 
     stages {
@@ -13,7 +13,7 @@ pipepilne {
             }
         }
         stage('Deploy') {
-            setps {
+            steps {
                 echo 'Deploying...'
             }
         }
