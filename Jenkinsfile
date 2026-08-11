@@ -17,6 +17,7 @@ pipeline {
         booleanParam(name: 'DEPLOY', defaultValue: true, description: 'Toggle this value')
         choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
+    }
 // when executing this pipeline jenkins will check this label
 // then it will launch the agent and the build the pipeline in that agent
 // Build 
