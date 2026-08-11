@@ -9,7 +9,7 @@ pipeline {
     }
     options {
         disableConcurrentBuilds() // to queue a build when there's already an executing build of the pipeline 
-        timeout(time: 15, Unit: 'MINUTES')
+        timeout(time: 15, unit: 'MINUTES')
     }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
