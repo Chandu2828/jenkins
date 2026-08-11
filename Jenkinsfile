@@ -7,9 +7,10 @@ pipeline {
     environment {
         COURSE = "Jenkins"
     }
-    // options {
-
-    // }
+    options {
+        disableConcurrentBuilds() // to queue a build when there's already an executing build of the pipeline 
+        timeout(time: 15, Unit: 'MINUTES')
+    }
 // when executing this pipeline jenkins will check this label
 // then it will launch the agent and the build the pipeline in that agent
 // Build 
