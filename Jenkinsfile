@@ -7,6 +7,9 @@ pipeline {
     environment {
         COURSE = "Jenkins"
     }
+    // options {
+
+    // }
 // when executing this pipeline jenkins will check this label
 // then it will launch the agent and the build the pipeline in that agent
 // Build 
@@ -17,6 +20,7 @@ pipeline {
                     sh """
                         echo "Building"
                         echo "Course is: ${COURSE}"
+                        sleep 5
                     """
                 }
             }
